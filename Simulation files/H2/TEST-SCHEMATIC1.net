@@ -1,0 +1,28 @@
+* source TEST
+V_VDC         N01120 0 10Vdc
+C_c2         N06020 N05872  1u  
+Q_q3         N05866 N05872 N05960 BC368 
+R_RB4         0 N05137  160k  
+R_RC2         0 N04643  1.27k  
+C_c1         N05960 VOUT  1u  
+R_r12         N05872 N05762  94k  
+R_RC3         N01373 N01120  0.9k  
+R_RE2         N05014 N01120  0.75k  
+Q_Q3         N01373 N01175 N01237 BC368 
+R_RB5         N01175 N01120  97.2k  
+R_RB3         N05137 N01120  480k  
+R_r3         0 N05960  3k  
+V_Vdc         N05762 0 10Vdc
+C_C3         N05272 N05137  1u  
+R_RB6         0 N01175  360k  
+R_rB6         0 N05872  360k  
+R_RE3         0 N01237  3k  
+V_V4         N06020 0 DC 0Vdc AC 1Vac 
+V_V3         N05272 0  
++SIN 0 1 10k 0 0 0
+R_Re         0 VOUT  1.81k  
+C_C1         N01237 VOUT  1u  
+C_C2         N04643 N01175  1u  
+R_rE         0 VOUT  2k  
+Q_Q4         N04643 N05137 N05014 Q2N4355
+R_rC3         N05866 N05762  0.9k  
