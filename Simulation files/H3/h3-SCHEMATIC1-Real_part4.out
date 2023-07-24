@@ -1,0 +1,143 @@
+
+**** 06/21/21 21:34:24 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Real_part4"  [ c:\users\asus\desktop\h3\h3-schematic1-real_part4.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "h3-schematic1-real_part4.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 1000 1k 30k
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\h3-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING h3-SCHEMATIC1.net ****
+* source H3
+Q_Q1         VO1 N07685 N07763 BC368 
+R_RE2         N05343 N03216  0.75k  
+Q_Q3         N03187 N02992 N03043 BC368 
+Q_Q2         VO2 N05235 N05343 Q2N4355
+R_RB3         N05235 N03216  480k  
+C_C5         IN N07763  1u  
+V_Vx         OUT 0 DC 0Vdc AC 0.1Vac 
+C_C1         N03043 OUT  1u  
+R_RC1         VO1 N03216  32k  
+R_RC2         0 VO2  0.245k  
+C_C3         VO1 N05235  1u  
+R_RB4         0 N05235  160k  
+C_C2         VO2 N02992  1u  
+R_RE1         0 N07763  500  
+R_RB1         N07685 N03216  50k  
+V_VDC         N03216 0 10Vdc
+R_RB5         N02992 N03216  97.2k  
+R_RB2         0 N07685  4.172k  
+R_RB6         0 N02992  360k  
+C_C4         0 N07685  1u  
+R_RC3         N03187 N03216  0.9k  
+R_RE3         0 N03043  3k  
+R_Rs         IN 0  25  
+R_Re         0 OUT  1.81k  
+
+**** RESUMING h3-schematic1-real_part4.sim.cir ****
+.END
+
+**** 06/21/21 21:34:24 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Real_part4"  [ c:\users\asus\desktop\h3\h3-schematic1-real_part4.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               BC368           Q2N4355         
+               NPN             PNP             
+          IS   14.060000E-15   12.270000E-12 
+          BF  187.6           194.8          
+          NF    1               1            
+         VAF  100             100            
+         IKF    4.103           1.123        
+         ISE  137.200000E-15   12.270000E-12 
+          NE    1.468           1.649        
+          BR    4.541           1.184        
+          NR    1               1            
+         IKR    1.701                        
+         ISC   44.130000E-15                 
+          NC    1.471                        
+          NK     .5507                       
+          RB                   10            
+          RC     .091            .6          
+         CJE  156.000000E-12  106.700000E-12 
+         VJE     .5                          
+         MJE     .3333           .5168       
+         CJC   52.240000E-12   48.280000E-12 
+         VJC     .5                          
+         MJC     .3333           .5615       
+          TF  964.800000E-12  867.000000E-12 
+         XTF    1.001000E+03     .8          
+         VTF   10               2            
+         ITF  595.3              .2          
+          TR   10.000000E-09  474.500000E-09 
+         XTB    1.5             1.5          
+          CN    2.42            2.2          
+           D     .87             .52         
+
+
+**** 06/21/21 21:34:24 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Real_part4"  [ c:\users\asus\desktop\h3\h3-schematic1-real_part4.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   IN)    0.0000  (  OUT)    0.0000  (  VO1)     .8307  (  VO2)    1.2282      
+
+(N02992)    6.6667 (N03043)    6.0030 (N03187)    8.2133 (N03216)   10.0000     
+
+(N05235)    5.7081 (N05343)    6.2202 (N07685)     .7587 (N07763)     .1448 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_Vx         0.000E+00
+    V_VDC       -7.540E-03
+
+    TOTAL POWER DISSIPATION   7.54E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .14
+

@@ -1,0 +1,17 @@
+** Profile: "SCHEMATIC1-Part3"  [ C:\USERS\ASUS\DESKTOP\H3\h3-SCHEMATIC1-Part3.sim ] 
+
+** Creating circuit file "h3-SCHEMATIC1-Part3.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 300 1k 30k
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\h3-SCHEMATIC1.net" 
+
+
+.END

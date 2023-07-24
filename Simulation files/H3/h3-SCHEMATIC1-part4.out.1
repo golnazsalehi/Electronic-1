@@ -1,0 +1,59 @@
+
+**** 06/21/21 14:31:44 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-part4"  [ C:\USERS\ASUS\DESKTOP\H3\h3-SCHEMATIC1-part4.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "h3-SCHEMATIC1-part4.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 1000 1k 30k
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\h3-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING h3-SCHEMATIC1.net ****
+* source H3
+Q_Q3         N00981 BE N00403 BC368 
+R_RB6         0 N00997  360k  
+R_RS         0 N23364  25  
+C_C2         N15392 N00997  1u  
+R_RB3         N13389 N13836  480k  
+R_RB4         0 N13389  160k  
+R_RE3         0 N00403  3k  
+Q_Q1         N21341 N23018 N21801 BC368 
+R_RB5         N00997 N13836  97.2k  
+R_RC1         N21341 N13836  32k  
+R_RC2         0 N15392  0.245k  
+C_C5         0 N23018  1u  
+Q_Q2         N15392 N13389 N15015 Q2N4355
+R_RB1         N23018 N13836  50k  
+R_RE2         N15015 N13836  0.75k  
+R_RC3         N00981 N13836  0.9k  
+V_Vout         N02275 0 DC 0Vdc AC 0.01Vac 
+V_VDC         N13836 0 10Vdc
+C_C3         N21341 N13389  1u  
+R_RB2         0 N23018  4.172k  
+R_RE1         0 N21801  500  
+C_C4         N23364 N21801  1u  
+C_C1         N00403 N02275  1u IC=0 
+
+**** RESUMING h3-SCHEMATIC1-part4.sim.cir ****
+.END
+
+ERROR -- Less than 2 connections at node BE

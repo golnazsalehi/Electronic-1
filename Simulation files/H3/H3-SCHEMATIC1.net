@@ -1,0 +1,25 @@
+* source H3
+Q_Q1         VO1 N07685 N07763 BC368 
+R_RE2         N05343 N03216  0.75k  
+Q_Q3         N03187 N02992 N03043 BC368 
+Q_Q2         VO2 N05235 N05343 Q2N4355
+R_RB3         N05235 N03216  480k  
+C_C5         IN N07763  1u  
+V_Vx         OUT 0 DC 0Vdc AC 0.1Vac 
+C_C1         N03043 OUT  1u  
+R_RC1         VO1 N03216  32k  
+R_RC2         0 VO2  0.245k  
+C_C3         VO1 N05235  1u  
+R_RB4         0 N05235  160k  
+C_C2         VO2 N02992  1u  
+R_RE1         0 N07763  500  
+R_RB1         N07685 N03216  50k  
+V_VDC         N03216 0 10Vdc
+R_RB5         N02992 N03216  97.2k  
+R_RB2         0 N07685  4.172k  
+R_RB6         0 N02992  360k  
+C_C4         0 N07685  1u  
+R_RC3         N03187 N03216  0.9k  
+R_RE3         0 N03043  3k  
+R_Rs         IN 0  25  
+R_Re         0 OUT  1.81k  
